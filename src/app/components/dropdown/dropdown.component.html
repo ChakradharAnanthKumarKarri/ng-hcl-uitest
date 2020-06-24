@@ -1,0 +1,9 @@
+<div class="form-control">
+    <label>{{label}}: </label>
+    <select name="{{name}}" [disabled]="isDisabled" (change)="onChangeDropdown($event.target)">
+        <option value="">Select {{label}}</option>
+        <option *ngFor="let value of data" value={{value.name}}>
+            {{value.name}}
+        </option>
+    </select>
+</div>

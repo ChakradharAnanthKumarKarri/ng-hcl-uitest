@@ -1,0 +1,26 @@
+<table>
+    <tbody>
+        <tr>
+            <th>Name</th>
+            <td>{{data.name}}</td>
+        </tr>
+        <tr>
+            <th>Capital</th>
+            <td>{{data.capital}}</td>
+        </tr>
+        <tr>
+            <th>Population</th>
+            <td>{{data.population}}</td>
+        </tr>
+        <tr>
+            <th>Currencies</th>
+            <td>
+                <span class="currency" *ngFor="let currency of data.currencies">{{currency.name}} "{{currency.symbol}}"</span>
+            </td>
+        </tr>
+        <tr>
+            <th>Flag</th>
+            <td><img [src]="data.flag" /></td>
+        </tr>
+    </tbody>
+</table>

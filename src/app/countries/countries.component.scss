@@ -1,0 +1,19 @@
+.form {
+    width: 500px;
+
+    &-control {
+        padding: 10px;
+    }
+}
+
+button {
+    background-color: #1976d2;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    margin: 0 auto;
+}
